@@ -1,16 +1,20 @@
 local keymap = vim.keymap -- for conciseness
 
 keymap.set("n", ";", ":", { desc = "Swap : for ;" })
-
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-
 keymap.set("n", "<leader>h", ":nohl<CR>", { desc = "Clear search highlights" })
-
 keymap.set("n", "<leader>ww", ":set wrap!<CR>", { desc = "Toggle Wordwrap" })
+
+-- reload config
+keymap.set("n", "<leader>vc", "<cmd>source $MYVIMRC<CR>", { desc = "Reload nvim config" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
+
+-- Motion
+keymap.set("n", "j", "jzz", { desc = "Keep cursor centered" })
+keymap.set("n", "k", "kzz", { desc = "Keep cursor centered" })
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
