@@ -32,5 +32,5 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 -- neotree
 keymap.set("n", "<leader>e", "<cmd>Neotree<cr>", { desc = "Open file explorer" }) --  Open Neotree
 
--- git fugitive
-keymap.set("n", "<leader>gb", "<cmd>G blame<cr>", { desc = "Open git blame" }) --  Open git blame
+-- neogit
+keymap.set("n", "<leader>gg", "<cmd>Neogit<cr>", { desc = "Open Neogit" }) --  Open Neogit
