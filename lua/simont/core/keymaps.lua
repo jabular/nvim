@@ -2,7 +2,7 @@ local keymap = vim.keymap -- for conciseness
 
 keymap.set("n", ";", ":", { desc = "Swap : for ;" })
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-keymap.set("n", "<leader>h", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<leader>ww", ":set wrap!<CR>", { desc = "Toggle Wordwrap" })
 
 -- reload config
@@ -28,3 +28,9 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- neotree
+keymap.set("n", "<leader>e", "<cmd>Neotree<cr>", { desc = "Open file explorer" }) --  Open Neotree
+
+-- git fugitive
+keymap.set("n", "<leader>gb", "<cmd>G blame<cr>", { desc = "Open git blame" }) --  Open git blame
