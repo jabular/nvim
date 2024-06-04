@@ -34,3 +34,8 @@ keymap.set("n", "<leader>e", "<cmd>Neotree<cr>", { desc = "Open file explorer" }
 
 -- neogit
 keymap.set("n", "<leader>gg", "<cmd>Neogit<cr>", { desc = "Open Neogit" }) --  Open Neogit
+keymap.set("n", "<leader>gbl", "<cmd>Gitsigns blame_line<cr>", { desc = "Gitsigns blame line" })
+keymap.set("n", "<leader>gtb", "<cmd>Gitsigns toggle_current_line_blame<cr>", { desc = "Gitsigns toggle line blame" })
+
+-- zenmode
+keymap.set("n", "<leader>zz", "<cmd>ZenMode<cr>", { desc = "Toggle Zenmode" })
