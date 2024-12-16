@@ -5,6 +5,9 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<leader>ww", ":set wrap!<CR>", { desc = "Toggle Wordwrap" })
 
+-- Oil
+keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Open Oil" })
+
 -- reload config
 keymap.set("n", "<leader>vc", "<cmd>source $MYVIMRC<CR>", { desc = "Reload nvim config" })
 
@@ -39,3 +42,7 @@ keymap.set("n", "<leader>gtb", "<cmd>Gitsigns toggle_current_line_blame<cr>", { 
 
 -- zenmode
 keymap.set("n", "<leader>zz", "<cmd>ZenMode<cr>", { desc = "Toggle Zenmode" })
+
+-- Conceal level (for obsidian)
+keymap.set("n", "<leader>oo", "<cmd>set conceallevel=0<cr>", { desc = "Toggle conceallevel" })
+keymap.set("n", "<leader>ee", "<cmd>set conceallevel=1<cr>", { desc = "Toggle conceallevel" })
